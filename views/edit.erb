@@ -9,9 +9,8 @@
   <input id="quantity_input" type="number" name="quantity" value="<%= @pizza.quantity %>">
   <label for="topping_select">Topping: </label>
   <select id="topping_select" class="" name="topping">
-    <option disabled value="<%= @pizza.topping %>" selected="selected"><%= @pizza.topping %></option>
-    <option value="Pepperoni">Pepperoni</option>
-    <option value="Italian Sausage">Italian Sausage</option>
+    <option value="Pepperoni" <%= "selected" if @pizza.topping == "Pepperoni" %> >Pepperoni</option>
+    <option value="Italian Sausage" <%= "selected" if @pizza.topping == "Italian Sausage" %> >Italian Sausage</option>
   </select>
   <input type="submit" name="" value="Update Pizza Order">
 </form>

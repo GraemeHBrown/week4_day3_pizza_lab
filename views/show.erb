@@ -5,3 +5,7 @@
 <p>Topping: <%= @pizza.topping %></p>
 <p>Quantity: <%= @pizza.quantity%></p>
 <p>Price: <%= @pizza.price%></p>
+<a href="/pizzas/<%= @pizza.id %>/edit">Edit order details</a>
+<form class="" action="/pizzas/<%= @pizza.id %>/delete" method="POST">
+    <input type="submit" name="delete-button" value="Delete Order">
+</form>

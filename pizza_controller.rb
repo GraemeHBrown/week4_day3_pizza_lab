@@ -42,3 +42,13 @@ post('/pizzas/:id') do
   @pizza.update()
   redirect '/pizzas'
 end
+
+# /pizzas/:id/delete
+
+#delete
+post('/pizzas/:id/delete') do
+  id = params[:id]
+  @pizza = Pizza.find(id)
+  @pizza.delete()
+  redirect'/pizzas'
+end
