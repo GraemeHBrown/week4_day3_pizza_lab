@@ -1,16 +1,27 @@
 <h2>Edit Order</h2>
 
-<form class="" action="/pizzas/<%= @pizza.id %>" method="POST">
-  <label for="first_name_input">First name:</label>
-  <input id="first_name_input" type="text" name="first_name" value="<%= @pizza.first_name %>">
-  <label for="last_name_input">Last name:</label>
-  <input id="last_name_input" type="text" name="last_name" value="<%= @pizza.last_name %>">
-  <label for="quantity_input">Quantity:</label>
-  <input id="quantity_input" type="number" name="quantity" value="<%= @pizza.quantity %>">
-  <label for="topping_select">Topping: </label>
-  <select id="topping_select" class="" name="topping">
-    <option value="Pepperoni" <%= "selected" if @pizza.topping == "Pepperoni" %> >Pepperoni</option>
-    <option value="Italian Sausage" <%= "selected" if @pizza.topping == "Italian Sausage" %> >Italian Sausage</option>
-  </select>
-  <input type="submit" name="" value="Update Pizza Order">
+<form class="edit-form" action="/pizzas/<%= @pizza.id %>" method="POST">
+  <div class="">
+
+    <label for="first_name_input">First name:</label>
+    <input id="first_name_input" type="text" name="first_name" value="<%= @pizza.first_name %>">
+  </div>
+  <div class="">
+    <label for="last_name_input">Last name:</label>
+    <input id="last_name_input" type="text" name="last_name" value="<%= @pizza.last_name %>">
+  </div>
+  <div class="">
+    <label for="quantity_input">Quantity:</label>
+    <input id="quantity_input" type="number" name="quantity" value="<%= @pizza.quantity %>">
+  </div>
+  <div class="">
+    <label for="topping_select">Topping: </label>
+    <select id="topping_select" class="" name="topping">
+      <option value="Pepperoni" <%= "selected" if @pizza.topping == "Pepperoni" %> >Pepperoni</option>
+      <option value="Italian Sausage" <%= "selected" if @pizza.topping == "Italian Sausage" %> >Italian Sausage</option>
+    </select>
+  </div>
+  <div class="">
+    <input type="submit" name="" value="Update Pizza Order">
+  </div>
 </form>

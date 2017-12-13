@@ -1,0 +1,53 @@
+body {
+  font-family: 'Kalam', cursive;
+  background-image: url("Pizza-Slice.jpg");
+  color: white;
+  font-size: 20px;
+
+}
+
+a {
+    text-decoration: none;
+    font-size: 25px;
+    color: salmon;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+  font-size: 60px;
+  color: white;
+  margin-bottom: 2px;
+
+}
+
+h2 {
+  font-size: 40px;
+
+}
+
+nav {
+  border-bottom: 2px;
+}
+
+ul {
+  text-align: left;
+  padding: 0;
+}
+
+li {
+  font-weight: 500;
+  display:inline-flex;
+}
+
+main {
+  width: 30%;
+  border: 3px dotted grey;
+  padding: 10px;
+}
+
+.edit-form {
+  display: block;
+}

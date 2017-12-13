@@ -43,8 +43,6 @@ post('/pizzas/:id') do
   redirect '/pizzas'
 end
 
-# /pizzas/:id/delete
-
 #delete
 post('/pizzas/:id/delete') do
   id = params[:id]

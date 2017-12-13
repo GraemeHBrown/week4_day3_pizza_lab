@@ -2,15 +2,21 @@
 <html>
 <head>
   <title>Pizza Shop</title>
+  <link rel="stylesheet" href="/style.css">
+   <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Kalam|Shadows+Into+Light" rel="stylesheet">
 </head>
 <body>
   <h1>CodeClan Pizza Shop</h1>
   <nav>
     <ul>
-      <li> <a href="/pizzas">All Orders </a></li>
-      <li> <a href="/pizzas/new">Order a pizza</a></li>
+      <li><a href="/pizzas">All Orders </a></li>
+      <li><a href="/pizzas/new">Order a pizza</a></li>
     </ul>
   </nav>
-  <%= yield %>
+  <main>
+    <%= yield %>
+  </main>
 </body>
+
 </html>
