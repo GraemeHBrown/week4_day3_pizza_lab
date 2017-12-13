@@ -23,9 +23,9 @@ end
 
 #create
 post('/pizzas')do
-  @pizza = Pizza.new(params)
-  @pizza.save()
-  erb :create
+@pizza = Pizza.new(params)
+@pizza.save()
+erb :create
 end
 
 #edit
@@ -33,5 +33,12 @@ get('/pizzas/:id/edit') do
   id = params[:id]
   @pizza = Pizza.find(id)
   erb :edit
+end
 
+#update
+post('/pizzas/:id') do
+  id = params[:id]
+  @pizza = Pizza.new(params)
+  @pizza.update()
+  redirect '/pizzas'
 end
